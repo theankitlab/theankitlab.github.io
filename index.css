@@ -253,7 +253,31 @@ marquee {
     gap: 16px;
     justify-content: center;
 
+    .error {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
+      h3 {
+        margin-top: 36px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        margin-bottom: 36px;
+        font-size: small;
+      }
+
+      >div {
+        width: 180px;
+        padding: 14px 0px;
+        user-select: none;
+        background-color: var(--surface-color);
+        color: var(--on-surface-color);
+        cursor: pointer;
+      }
+    }
 
     .project {
       padding: 20px;
